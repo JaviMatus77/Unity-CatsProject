@@ -7,16 +7,23 @@ public class PlayerController : MonoBehaviour
     private Vector2 _movement;
     public float speed;
 
+    public bool isPlayer01;
+    public bool isPlayer02;
+
     private void Awake()
     {
         _inputActions = new MainControls();
         
         // Suscribirse a los eventos de movimiento
-        _inputActions.Player01.Move.performed += ctx => OnMove(ctx);
-        _inputActions.Player01.Move.canceled += ctx => OnMove(ctx);
-        
-        _inputActions.Player02.Move.performed += ctx => OnMove(ctx);
-        _inputActions.Player02.Move.canceled += ctx => OnMove(ctx);
+
+        if(isPlayer01){
+            _inputActions.Player01.Move.performed += ctx => OnMove(ctx);
+            _inputActions.Player01.Move.canceled += ctx => OnMove(ctx);
+        }
+        else if(isPlayer02){
+            _inputActions.Player02.Move.performed += ctx => OnMove(ctx);
+            _inputActions.Player02.Move.canceled += ctx => OnMove(ctx);
+        }
     }
 
     private void OnEnable()

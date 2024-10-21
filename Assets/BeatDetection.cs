@@ -6,9 +6,7 @@ public class BeatDetection : MonoBehaviour
 {
     public float bpm = 120; // Beats per minute
     private float beatInterval;
-    private float nextBeatTime;
-
-    public GameObject beatPrefab; // Renamed for clarity
+    private float nextBeatTime;    
 
     void Start() {
         beatInterval = 60f / bpm; // Calculate the interval between beats
@@ -18,9 +16,17 @@ public class BeatDetection : MonoBehaviour
     void Update() {
         if (Time.time >= nextBeatTime) {
             Debug.Log("Beat detected at: " + Time.time);
-            nextBeatTime += beatInterval; // Calculate the next beat
+            nextBeatTime += beatInterval;
 
-            Instantiate(beatPrefab, transform.position, Quaternion.identity); // Instantiate the prefab at the object's position
+            testing();
         }
+    }
+
+    //TESTING
+
+    public GameObject beatPrefab; // Renamed for clarity
+    public void testing()
+    {
+        Instantiate(beatPrefab, this.transform.position, Quaternion.identity);
     }
 }
