@@ -10,6 +10,7 @@ public class ScaleEffect : MonoBehaviour
     void Start()
     {
         initialScale = transform.localScale;
+        audioAnalyzer = FindObjectOfType<AudioAnalyzer>();
     }
 
     void Update()
