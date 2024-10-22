@@ -7,11 +7,11 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public bool isRunning = true;
 
+    public List<GameObject> players;
+
     private void Awake()
     {
         MakeSingleton();
-
-
     }
 
     void MakeSingleton()

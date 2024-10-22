@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
         if(isPlayer01){
             _inputActions.Player01.Move.performed += ctx => OnMove(ctx);
             _inputActions.Player01.Move.canceled += ctx => OnMove(ctx);
+
+            _inputActions.Player01.Interact.performed += ctx => OnInteract(ctx);
         }
         else if(isPlayer02){
             _inputActions.Player02.Move.performed += ctx => OnMove(ctx);
@@ -47,6 +49,11 @@ public class PlayerController : MonoBehaviour
         {
             _movement = Vector2.zero; // Detiene el movimiento si la acción se cancela
         }
+    }
+
+    private void OnInteract(InputAction.CallbackContext context)
+    {
+        print("wena mis panitas");
     }
 
     private void Update()

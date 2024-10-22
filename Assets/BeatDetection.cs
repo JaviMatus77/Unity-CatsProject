@@ -15,9 +15,8 @@ public class BeatDetection : MonoBehaviour
 
     void Update() {
         if (Time.time >= nextBeatTime) {
-            Debug.Log("Beat detected at: " + Time.time);
+            //Debug.Log("Beat detected at: " + Time.time);
             nextBeatTime += beatInterval;
-
             testing();
         }
     }
