@@ -8,6 +8,7 @@ public class BallMovement : MonoBehaviour
     private int currentIndex = 0;
 
     public float speed = 5f; // La velocidad de movimiento
+    public int damageAmount = 20;
 
     private void Start()
     {
@@ -31,8 +32,29 @@ public class BallMovement : MonoBehaviour
             currentIndex = (currentIndex + 1) % players.Count;
             speed += 1;
 
-            if(speed > 10) this.GetComponent<SpriteRenderer>().color = Color.yellow;
-            if(speed > 20) this.GetComponent<SpriteRenderer>().color = Color.red;
+            Debug.Log("SpeedUp!");
+
+            if (speed >= 5 && speed < 10) this.GetComponent<SpriteRenderer>().color = Color.green;
+            if (speed >= 10 && speed < 20) this.GetComponent<SpriteRenderer>().color = Color.yellow;
+            if (speed >= 20) this.GetComponent<SpriteRenderer>().color = Color.red;
+        }        
+    }
+
+    //tenemos dos logicas para cuando choca
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Trigger!");
+
+        // Verifica si el objeto colisionado tiene el componente PlayerHealth
+        if (other.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damageAmount);
+                Debug.Log("¡Jugador golpeado!");
+            }
         }
     }
+
 }
