@@ -32,7 +32,7 @@ public class BallMovement : MonoBehaviour
             currentIndex = (currentIndex + 1) % players.Count;
             speed += 1;
 
-            Debug.Log("SpeedUp!");
+            //Debug.Log("SpeedUp!");
 
             if (speed >= 5 && speed < 10) this.GetComponent<SpriteRenderer>().color = Color.green;
             if (speed >= 10 && speed < 20) this.GetComponent<SpriteRenderer>().color = Color.yellow;
@@ -41,13 +41,12 @@ public class BallMovement : MonoBehaviour
     }
 
     //tenemos dos logicas para cuando choca
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Trigger!");
-
-        // Verifica si el objeto colisionado tiene el componente PlayerHealth
         if (other.CompareTag("Player"))
         {
+            print(other.gameObject.name);
+
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
