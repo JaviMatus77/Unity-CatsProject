@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
         else if(isPlayer02){
             _inputActions.Player02.Move.performed += ctx => OnMove(ctx);
             _inputActions.Player02.Move.canceled += ctx => OnMove(ctx);
+
+            _inputActions.Player02.Interact.performed += ctx => OnInteract(ctx);
         }
     }
 
@@ -53,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnInteract(InputAction.CallbackContext context)
     {
-        print("wena mis panitas");
+        this.gameObject.GetComponent<PlayerAttack>().PerformAttack();
     }
 
     private void Update()
