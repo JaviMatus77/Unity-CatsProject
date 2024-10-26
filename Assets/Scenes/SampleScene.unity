@@ -1335,10 +1335,10 @@ RectTransform:
   - {fileID: 317526268}
   m_Father: {fileID: 95367440}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 298.7149, y: 0}
+  m_SizeDelta: {x: 631, y: 356}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &261099420
 MonoBehaviour:
@@ -1975,10 +1975,10 @@ RectTransform:
   - {fileID: 621017020}
   m_Father: {fileID: 95367440}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 328.5356, y: 0}
+  m_SizeDelta: {x: 631, y: 356}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &495850177
 MonoBehaviour:
@@ -2539,16 +2539,16 @@ RectTransform:
   m_GameObject: {fileID: 621017019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 495850175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 164.2678, y: -177.5}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -10}
+  m_SizeDelta: {x: 500, y: 500}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &621017021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2562,14 +2562,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
+  m_Color: {r: 0.3106172, g: 1, b: 0.25, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3877129408587696079, guid: c7a60211c0fc61347ac84e85bc804d3b, type: 3}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2601,7 +2601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioAnalyzer: {fileID: 0}
   bandIndex: 0
-  scaleMultiplier: 1
+  scaleMultiplier: 0.1
 --- !u!1 &737126718
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,7 +3102,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 076aae4e45a253d45be40f3cc553a7c8, type: 3}
   m_Resource: {fileID: 8300000, guid: 076aae4e45a253d45be40f3cc553a7c8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4319,7 +4319,7 @@ Transform:
   m_GameObject: {fileID: 1640966215}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.093}
   m_LocalScale: {x: 1.1326, y: 1.1326, z: 1.1326}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4554,16 +4554,16 @@ RectTransform:
   m_GameObject: {fileID: 1659304601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 261099418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149.35745, y: -177.5}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: -10}
+  m_SizeDelta: {x: 500, y: 500}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1659304603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4577,14 +4577,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.49019608}
+  m_Color: {r: 0.3137255, g: 0.9921569, b: 0.2509804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8296123124182947636, guid: c7a60211c0fc61347ac84e85bc804d3b, type: 3}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4616,7 +4616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioAnalyzer: {fileID: 0}
   bandIndex: 0
-  scaleMultiplier: 1
+  scaleMultiplier: 0.1
 --- !u!1 &1710326498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4716,7 +4716,7 @@ GameObject:
   - component: {fileID: 1829575058}
   - component: {fileID: 1829575057}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas-UI-Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

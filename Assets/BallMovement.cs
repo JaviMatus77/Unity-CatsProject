@@ -8,7 +8,7 @@ public class BallMovement : MonoBehaviour
 
     [Header("Movement Settings")]
     public float speed = 5f;
-    public float speedIncreaseAmount = 1f; // Amount to increase speed
+    public float speedIncreaseAmount = 0.5f; // Amount to increase speed
     public int damageAmount = 20;
 
     private SpriteRenderer spriteRenderer;
