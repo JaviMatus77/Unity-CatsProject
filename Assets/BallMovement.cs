@@ -43,6 +43,7 @@ public class BallMovement : MonoBehaviour
             UpdateColorBasedOnSpeed();
         }
     }
+
     public void ChangeTarget()
     {
         currentIndex = (currentIndex + 1) % players.Count;

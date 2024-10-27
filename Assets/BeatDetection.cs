@@ -23,9 +23,13 @@ public class BeatDetection : MonoBehaviour
 
     //TESTING
 
-    public GameObject beatPrefab; // Renamed for clarity
+    public GameObject beatPrefab;
+    public Animator animator;
     public void testing()
     {
-        Instantiate(beatPrefab, this.transform.position, Quaternion.identity);
+        //Instantiate(beatPrefab, this.transform.position, Quaternion.identity);
+
+        animator = beatPrefab.GetComponent<Animator>();
+        animator.Play(animator.GetCurrentAnimatorStateInfo(0).shortNameHash, 0, 0f);
     }
 }
