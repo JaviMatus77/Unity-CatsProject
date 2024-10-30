@@ -6,7 +6,7 @@ public class BeatDetection : MonoBehaviour
 {
     public float bpm = 120; // Beats per minute
     private float beatInterval;
-    private float nextBeatTime;    
+    private float nextBeatTime;
 
     void Start() {
         beatInterval = 60f / bpm; // Calculate the interval between beats
