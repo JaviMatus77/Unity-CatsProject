@@ -10,8 +10,8 @@ public class RestAPI_Prueba : MonoBehaviour
 
     public Text id;
     public Text nombre;
-    public Text descriocion;
-    public Text description_large;
+    public Text descripcion;
+    public Text descripcion_large;
     public Text nombre_localizacion;
     public Text tipo;
     public Text imagen;
@@ -54,11 +54,11 @@ public class RestAPI_Prueba : MonoBehaviour
                 Debug.Log(nombre.text);
 
 
-                descriocion.text = "descripcion: " + stats[index]["descriocion"];
-                Debug.Log(descriocion.text);
+                descripcion.text = "descripcion: " + stats[index]["descripcion"];
+                Debug.Log(descripcion.text);
 
-                description_large.text = "description_large: " + stats[index]["description_large"];
-                Debug.Log(description_large.text);
+                descripcion_large.text = "description_large: " + stats[index]["descripcion_large"];
+                Debug.Log(descripcion_large.text);
 
                 nombre_localizacion.text = "nombre_localizacion: " + stats[index]["nombre_localizacion"];
                 Debug.Log(nombre_localizacion.text);
